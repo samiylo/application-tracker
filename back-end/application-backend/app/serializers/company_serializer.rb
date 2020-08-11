@@ -1,4 +1,4 @@
 class CompanySerializer < ActiveModel::Serializer
     attributes :id, :name, :address
-    has_many :reviews
+    has_many :applications
 end

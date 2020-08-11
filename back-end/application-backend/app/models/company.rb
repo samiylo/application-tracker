@@ -1,4 +1,4 @@
 class Company < ApplicationRecord
-    has_many :applications, dependent: => :destroy # dependent will destroy an application if the company gets deleted. 
+    has_many :applications 
     validates :name, :address, presence: true
 end

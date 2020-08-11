@@ -9,6 +9,8 @@ class Api::V1::ApplicationsController < ApplicationController
 
     def create
         @application = @company.applications.new(application_params)
+        # @application.date = Date.now 
+        @application.save
         render json: @application, status: :ok 
 
     end

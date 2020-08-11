@@ -8,13 +8,13 @@ class Api::V1::CompaniesController < ApplicationController
     end
 
     def show
-        @company = Company.find(params:[:id])
+        @company = Company.find(params[:id])
 
         render json: @company, status: :ok
     end
 
     def update
-        @company = Company.find(params:[:id])
+        @company = Company.find(params[:id])
         @company.update(company_params)
 
         render json: @company, status: :ok
@@ -22,12 +22,12 @@ class Api::V1::CompaniesController < ApplicationController
 
     def create
         @company = Company.new(company_params)
-
+        @company.save
         render json: @company, status: :ok
     end
 
     def destroy
-        @company = Company.find(params:[:id])
+        @company = Company.find(params[:id])
         @company.delete
 
         render json: @company, status: :ok
