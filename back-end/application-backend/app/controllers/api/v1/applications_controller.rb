@@ -1,25 +1,46 @@
 class Api::V1::ApplicationsController < ApplicationController
-    before_action :set_params, only: [:show, :update, :destroy]
+    before_action :set_company, :set_params, only: [:show, :update, :destroy]
 
     def index 
-        @applications = Application.all
+        @applications = @company.applications
 
         render json: @applications, status: :ok
     end
 
     def create
-        @application = Application.create(application_params)
+        @application = Application.new(application_params)
+        if @application.save
+            render json: @application, status: :ok 
+        else
+            render json: {error: 'Application was not saved'}
+        end
+    end
 
-        render json: @application, status: :ok 
+    def show
+        @application = Application.find(params[:id])
+
+        render json: @application, status: :ok
+    end
+
+    def destroy
+        @application = Application.find(params[:id])
+        @application.delete
+
     end
 
     private
 
+    # bellow we are saying: we are gonna require an application, and we will permit these params
     def application_params
         params.require(:application).permit(:position, :description, :date, :company_id)
     end
 
     def set_params
         @application = Application.find(params[:id])
+    end
+    
+    #since applications belong to a company, we first need to return the applications that belong to that company.
+    def set_company
+        @company = Company.find(params[:company_id])
     end
 end
