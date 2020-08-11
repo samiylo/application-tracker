@@ -8,12 +8,9 @@ class Api::V1::ApplicationsController < ApplicationController
     end
 
     def create
-        @application = Application.new(application_params)
-        if @application.save
-            render json: @application, status: :ok 
-        else
-            render json: {error: 'Application was not saved'}
-        end
+        @application = @company.applications.new(application_params)
+        render json: @application, status: :ok 
+
     end
 
     def show
