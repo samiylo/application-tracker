@@ -1,7 +1,7 @@
 class CreateApplications < ActiveRecord::Migration[6.0]
   def change
     create_table :applications do |t|
-      t.integer :company_id
+      t.references :company, foreign_key: true
       t.string :position
       t.string :description
       t.datetime :date

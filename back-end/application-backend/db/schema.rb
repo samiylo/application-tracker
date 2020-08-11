@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_08_11_171638) do
     t.datetime "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["company_id"], name: "index_applications_on_company_id"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -28,4 +29,5 @@ ActiveRecord::Schema.define(version: 2020_08_11_171638) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "applications", "companies"
 end
