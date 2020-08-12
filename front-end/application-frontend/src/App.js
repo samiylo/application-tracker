@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { fetchCompanies } from './actions/fetchCompanies'
+// import { connect } from 'react-redux';
+// import { fetchCompanies } from './actions/fetchCompanies'
+import CompaniesContainer from './container/CompaniesContainer';
 
 
 class App extends Component {
-
-  state = {
-
-  }
 
   componentDidMount() {
 
@@ -17,11 +14,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        App
+        <CompaniesContainer />
       </div>
     )
   }
 }
 
 
-export default connect(null, { fetchCompanies })(App);
+export default App;
