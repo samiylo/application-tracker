@@ -8,7 +8,7 @@ import { fetchCompanies } from '../actions/fetchCompanies'
 class CompaniesContainer extends Component {
 
     componentDidMount() {
-        // this.props.fetchCompanies()
+        this.props.fetchCompanies()
     }
 
     render() {
@@ -16,7 +16,7 @@ class CompaniesContainer extends Component {
             <div>
                 Company Container
                 <CompaniesInput />
-                <Companies />
+                <Companies companies={this.props.companies} />
                 
             </div>
         )
