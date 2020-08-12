@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addCompany } from '../actions/addCompany'
 
 class CompanyInput extends Component {
 
@@ -17,6 +19,8 @@ class CompanyInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+
+        this.props.addCompany(this.state)
         
     }
 
@@ -38,4 +42,4 @@ class CompanyInput extends Component {
     }
 }
 
-export default CompanyInput;
+export default connect(null, { addCompany })(CompanyInput);

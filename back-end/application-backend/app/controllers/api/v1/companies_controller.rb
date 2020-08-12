@@ -21,6 +21,7 @@ class Api::V1::CompaniesController < ApplicationController
     end
 
     def create
+        # binding.pry
         @company = Company.new(company_params)
         @company.save
         render json: @company, status: :ok
@@ -36,7 +37,7 @@ class Api::V1::CompaniesController < ApplicationController
     private
 
     def company_params
-        params.require(:company).permit(:name, :adress)
+        params.require(:company).permit(:name, :address)
     end
 
     def set_params
