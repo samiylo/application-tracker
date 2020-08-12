@@ -14,7 +14,6 @@ class CompaniesContainer extends Component {
     render() {
         return (
             <div>
-                Company Container
                 <CompaniesInput />
                 <Companies companies={this.props.companies} />
                 
