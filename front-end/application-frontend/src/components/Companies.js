@@ -1,8 +1,9 @@
 import React from 'react';
+import Company from './Company'
 
 function Companies({companies}) {
 
-    const companiesArray = companies.map(company => <li key={company.id}>{company.name} : {company.address}</li>)
+    const companiesArray = companies.map(company => <Company key={company.id} company={company} />)
 
     return (
         <div>

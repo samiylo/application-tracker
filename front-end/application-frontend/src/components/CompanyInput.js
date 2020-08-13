@@ -19,8 +19,12 @@ class CompanyInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-
+        
         this.props.addCompany(this.state)
+        this.setState({
+            name: '',
+            address: ''
+        })
         
     }
 
