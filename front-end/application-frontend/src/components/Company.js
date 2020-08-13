@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Company({company}) {
+function Company(props) {
+
+    let company = props.companies[props.match.params.id - 1]
     return (
         <div>
-            <div key={company.id}>{company.name} {company.address}</div>
+            {company ? company.name : null} --- {company ? company.address : null}
         </div>
     )
 }
