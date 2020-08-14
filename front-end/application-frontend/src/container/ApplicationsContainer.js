@@ -7,7 +7,7 @@ export default class ApplicationsContainer extends Component {
         return (
             <div>
                 
-                <ApplicationInput />
+                <ApplicationInput companies={this.props.company} />
                 <Applications applications={this.props.company && this.props.company.applications} />
             </div>
         )

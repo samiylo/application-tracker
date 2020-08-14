@@ -8,8 +8,10 @@ function Applications({applications}) {
             <p>
                 {application.description}
             </p>
+
         </div>
         ): null
+        console.log(applications)
     return (
         <div>
             {array}

@@ -11,7 +11,7 @@ class Api::V1::ApplicationsController < ApplicationController
         @application = @company.applications.new(application_params)
         # @application.date = Date.now 
         @application.save
-        render json: @application, status: :ok 
+        render json: @company, status: :ok 
 
     end
 
