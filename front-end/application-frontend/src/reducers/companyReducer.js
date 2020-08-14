@@ -9,7 +9,15 @@ export default function companyReducer(state = {companies: []}, action) {
             return {...state, companies: [...state.companies, action.payload]}
 
         case 'ADD_APPLICATION':
-            return{}
+        let companies = state.companies.map(company => {
+                if (company.id = action.payload.id) {
+                    return action.payload
+                } else {
+                    return company
+                }
+                    
+                })
+            return companies
 
         default:
             return state

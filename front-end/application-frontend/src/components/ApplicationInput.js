@@ -17,7 +17,8 @@ class ApplicationInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.addApplication(this.state, this.props.id)
+        console.log(this.props.company.id)
+        this.props.addApplication(this.state, this.props.company.id)
         this.setState({
             position: '',
             description: ''

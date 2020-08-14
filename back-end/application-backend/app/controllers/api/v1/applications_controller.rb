@@ -1,5 +1,5 @@
 class Api::V1::ApplicationsController < ApplicationController
-    before_action :set_company, :set_params, only: [:show, :update, :destroy]
+    before_action :set_company
 
     def index 
         @applications = @company.applications

@@ -11,7 +11,7 @@ function Applications({applications}) {
 
         </div>
         ): null
-        console.log(applications)
+
     return (
         <div>
             {array}

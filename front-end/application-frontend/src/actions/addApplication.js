@@ -9,6 +9,6 @@ export function addApplication(application, companyID) {
             body: JSON.stringify(application)
         })
         .then(response => response.json())
-        .then(data =>  dispatch({type: 'ADD_APPLICATION', payload: data}))
+        .then(company =>  dispatch({type: 'ADD_APPLICATION', payload: company}))
     }
 }

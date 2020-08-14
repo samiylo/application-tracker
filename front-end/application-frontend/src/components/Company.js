@@ -1,15 +1,15 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import ApplicationsContainer from '../container/ApplicationsContainer'
 
 function Company(props) {
 
-    // console.log(props.companies)
-    // let allCompanies = props.companies
-    // console.log(allCompanies)
-    // let company = allCompanies.filter(company => company.id === props.match.params.id)
+    console.log(props.companies)
+    console.log(props.match.params.id)
 
-    let company = props.companies[props.match.params.id - 1]
+    let company = props.companies.find(company => company.id == props.match.params.id)
+    console.log(company)
+
 
 
     return (
