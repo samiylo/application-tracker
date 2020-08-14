@@ -15,9 +15,18 @@ export default function companyReducer(state = {companies: []}, action) {
                 } else {
                     return company
                 }
-                    
                 })
             return companies
+
+            case 'DELETE_APPLICATION':
+                let companiestwo = state.companies.map(company => {
+                        if (company.id = action.payload.id) {
+                            return action.payload
+                        } else {
+                            return company
+                        }
+                        })
+                return companiestwo
 
         default:
             return state
