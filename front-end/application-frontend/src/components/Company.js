@@ -7,7 +7,7 @@ function Company(props) {
     console.log(props.companies)
     console.log(props.match.params.id)
 
-    let company = props.companies.find(company => company.id == props.match.params.id)
+    let company =  props.companies ? props.companies.find(company => company.id == props.match.params.id) : null
     console.log(company)
 
 
