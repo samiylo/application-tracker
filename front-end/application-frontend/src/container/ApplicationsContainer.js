@@ -8,7 +8,7 @@ export default class ApplicationsContainer extends Component {
             <div>
                 
                 <ApplicationInput company={this.props.company} />
-                <Applications applications={this.props.company && this.props.company.applications} />
+                <Applications applications={this.props.company && this.props.company.applications} company={this.props.company && this.props.company} />
             </div>
         )
     }
