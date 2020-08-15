@@ -24,7 +24,7 @@ class Api::V1::ApplicationsController < ApplicationController
     def destroy
         @application = Application.find(params[:id])
         @application.delete
-
+        render json: @application, status: :ok
     end
 
     private

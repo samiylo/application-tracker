@@ -6,9 +6,15 @@ import { deleteApplication } from '../actions/deleteApplication'
 
 class Applications extends Component {
 
+    state ={
 
-    handleSubmit = (application) => {
+    }
+
+
+    handleSubmit = (event,application) => {
+        event.preventDefault()
         this.props.deleteApplication(application.id, this.props.company.id)
+
     }
     render() {
         return (
@@ -17,7 +23,7 @@ class Applications extends Component {
                     <div key={application.id}>
                         <h3>{application.position}</h3>
                         <p>{application.description}</p>
-                        <button onClick={() => this.handleSubmit(application)} type="submit">delete</button>
+                        <button onClick={(event) => this.handleSubmit(event, application)} type="submit">delete</button>
                     </div>)}
             </div>
         )
