@@ -28,6 +28,16 @@ export default function companyReducer(state = {companies: []}, action) {
                         })
                 return companiestwo
 
+            case 'EDIT_COMPANY':
+                let companiesthree = state.companies.map(company => {
+                    if (company.id = action.payload.id) {
+                        return action.payload
+                    } else {
+                        return company
+                    }
+                    })
+            return companiesthree
+
         default:
             return state
     }

@@ -16,7 +16,7 @@ class Api::V1::CompaniesController < ApplicationController
     def update
         @company = Company.find(params[:id])
         @company.update(company_params)
-
+        @company.save
         render json: @company, status: :ok
     end
 

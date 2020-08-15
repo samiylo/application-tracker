@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Redirect } from 'react-router-dom';
 import ApplicationsContainer from '../container/ApplicationsContainer'
+import  CompanyEdit from './CompanyEdit'
 
 function Company(props) {
 
@@ -15,7 +16,11 @@ function Company(props) {
     return (
         <div>
             {/* {company ? null : <Redirect to='/companies'></Redirect>} */}
+            
             <h2>{company ? company.name : null} --- {company ? company.address : null}</h2>
+            <h3>Edit Company</h3>
+            <CompanyEdit company={company} />
+            <h3>Add Application</h3>
             <ApplicationsContainer company={company} />
         </div>
     )
