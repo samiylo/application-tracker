@@ -7,6 +7,7 @@ import companyReducer from './reducers/companyReducer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App';
 
+
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 let store = createStore(companyReducer, composeEnhancer(applyMiddleware(thunk)))
