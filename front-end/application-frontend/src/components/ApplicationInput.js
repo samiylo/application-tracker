@@ -31,10 +31,11 @@ class ApplicationInput extends Component {
             <div>
                 <form className='form' onSubmit={this.handleSubmit} >
                     <label className='form-label'>Position</label>
-                    <input type='text' name='position' value={this.props.position} onChange={this.handleChange} ></input>
+                    <input className='nav-input'type='text' name='position' value={this.props.position} onChange={this.handleChange} ></input>
                     <br/>
                     <label className='form-label'>Description</label>
-                    <input type='text' name='description' value={this.props.description} onChange={this.handleChange} ></input>
+                    <input className='nav-input' type='text' name='description' value={this.props.description} onChange={this.handleChange} ></input>
+                    <br/>
                     <input type='submit'></input>
                 </form>
             </div>

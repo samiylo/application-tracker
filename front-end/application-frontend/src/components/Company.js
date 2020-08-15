@@ -18,8 +18,10 @@ function Company(props) {
             {/* {company ? null : <Redirect to='/companies'></Redirect>} */}
             
             <h2>{company ? company.name : null}</h2> <h4>{company ? company.address : null}</h4>
+
             <h3>Edit Company</h3>
             <CompanyEdit company={company} />
+
             <h3>Add Application</h3>
             <ApplicationsContainer company={company} />
         </div>

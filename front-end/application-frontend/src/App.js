@@ -20,7 +20,6 @@ class App extends Component {
         <div>
         <NavBar />
         </div>
-        
         <CompaniesContainer />
       </div>
     )

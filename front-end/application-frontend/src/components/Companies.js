@@ -11,6 +11,7 @@ const companiesArray = companies.map(company =>
 
     return (
         <div>
+            <h2>Companies</h2>
             {companiesArray}
             {/* {console.log(companies)} */}
         </div>
