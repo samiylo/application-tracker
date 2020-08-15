@@ -21,7 +21,7 @@ class Applications extends Component {
             <div>
                 {this.props.applications && this.props.applications.map(application => 
                     <div key={application.id}>
-                        <h3>{application.position}</h3>
+                        <h4>{application.position}</h4>
                         <p>{application.description}</p>
                         <button onClick={(event) => this.handleSubmit(event, application)} type="submit">delete</button>
                     </div>)}

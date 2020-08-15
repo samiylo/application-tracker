@@ -17,7 +17,7 @@ function Company(props) {
         <div>
             {/* {company ? null : <Redirect to='/companies'></Redirect>} */}
             
-            <h2>{company ? company.name : null} --- {company ? company.address : null}</h2>
+            <h2>{company ? company.name : null}</h2> <h4>{company ? company.address : null}</h4>
             <h3>Edit Company</h3>
             <CompanyEdit company={company} />
             <h3>Add Application</h3>

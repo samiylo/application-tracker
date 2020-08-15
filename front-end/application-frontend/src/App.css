@@ -3,7 +3,7 @@
 .navbar {
     background-color: grey;
     height: 40px;
-    text-align: center;
+
     text-justify: center;
     margin: auto;
     top: 0;
@@ -14,20 +14,28 @@
 
 }
 
+/* a:link, a:visited {
+            
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    } */
 .nav-link {
     font-size: 20px;
     color: white;
-    margin: 20px;
+    margin: 15px;
+    display: inline-block;
     text-decoration: none;
 
 }
 
 .companies {
     text-decoration: none;
-    width: 80px;
+    width: 200px;
     margin: 10px;
     border: 10px;
     font-size: 20px;
+    display: inline-block;
 
     color: black;
 }
