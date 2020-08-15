@@ -1,4 +1,43 @@
-#navbar {
-    color: palevioletred;
-    background-color: purple;
+
+
+.navbar {
+    background-color: grey;
+    height: 40px;
+    text-align: center;
+    text-justify: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.nav-link {
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+.companies {
+    text-decoration: none;
+    width: 80px;
+    margin: 10px;
+    border: 10px;
+    font-size: 20px;
+
+    color: black;
+}
+
+.form {
+    margin:10px auto;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-label {
+    padding: 5px
 }

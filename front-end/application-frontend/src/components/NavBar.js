@@ -7,13 +7,10 @@ export default class NavBar extends Component {
 
     render() {
 
-        const divStyle = {
-            color: 'red',
-        }
         return (
-            <div>
-                <Link to='/companies' style={{paddingRight: '10px'}}>Companies </Link>
-                <Link to='/company/new'> Add Company</Link>
+            <div className='navbar'>
+                <Link className='nav-link' to='/companies' style={{paddingRight: '10px'}}>Companies </Link>
+                <Link className='nav-link' to='/company/new'> Add Company</Link>
             </div>
         )
     }

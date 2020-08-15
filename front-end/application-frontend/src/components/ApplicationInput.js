@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addApplication } from '../actions/addApplication'
+import '../App.css'
 
 class ApplicationInput extends Component {
 
@@ -28,11 +29,11 @@ class ApplicationInput extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit} >
-                    <label>Position</label>
+                <form className='form' onSubmit={this.handleSubmit} >
+                    <label className='form-label'>Position</label>
                     <input type='text' name='position' value={this.props.position} onChange={this.handleChange} ></input>
                     <br/>
-                    <label>Description</label>
+                    <label className='form-label'>Description</label>
                     <input type='text' name='description' value={this.props.description} onChange={this.handleChange} ></input>
                     <input type='submit'></input>
                 </form>

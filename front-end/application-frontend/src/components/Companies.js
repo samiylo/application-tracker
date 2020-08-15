@@ -6,7 +6,7 @@ function Companies({companies}) {
 
 const companiesArray = companies.map(company => 
     <div key={company.id}>
-        <Link to={`company/${company.id}`} > {company.name} </Link> 
+        <Link className='companies' to={`company/${company.id}`} > {company.name} </Link> 
     </div>)
 
     return (

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { editCompany } from '../actions/editCompany'
+import '../App.css'
 
 class CompanyEdit extends Component {
 
@@ -31,11 +32,11 @@ class CompanyEdit extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Company Name</label>
+                <form className='form' onSubmit={this.handleSubmit}>
+                    <label className='form-label'>Company Name</label>
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange} placeholder="name"></input>
                     <br/>
-                    <label>Company Address</label>
+                    <label className='form-label'>Company Address</label>
                     <input type="text" name="address" value={this.state.address} onChange={this.handleChange} placeholder="address"></input>
                     <br/>
                     <input type="submit"></input>
