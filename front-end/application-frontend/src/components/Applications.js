@@ -6,10 +6,6 @@ import { deleteApplication } from '../actions/deleteApplication'
 
 class Applications extends Component {
 
-    state ={
-
-    }
-
 
     handleSubmit = (event,application) => {
         event.preventDefault()

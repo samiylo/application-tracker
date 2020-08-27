@@ -34,6 +34,13 @@ body {
 
 }
 
+.home-button {
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+    margin-left: 940px;
+}
+
 .nav-input {
     margin: 10px;
 }
