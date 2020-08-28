@@ -1,15 +1,14 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-export default function Home() {
+export default function Home(props) {
 
-    function handleClick() {
-
-    }
-
-
+    const history = useHistory()
     return (
-        <div className={'home-button'} onClick={() => handleClick} >
-            
+        <div>
+                <img className={'home-button'} onClick={() => {history.goBack()}} src={'https://pngriver.com/wp-content/uploads/2018/04/Download-Back-Button-Png-Image-59237-For-Designing-Projects.png'} />
         </div>
+
     )
 }

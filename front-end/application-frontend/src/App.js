@@ -3,18 +3,12 @@ import React, { Component } from 'react';
 // import { fetchCompanies } from './actions/fetchCompanies'
 import CompaniesContainer from './container/CompaniesContainer';
 import NavBar from './components/NavBar';
+import { useHistory } from "react-router-dom";
 import './App.css'
 
 
+function App() {
 
-class App extends Component {
-
-  componentDidMount() {
-
-  }
-
-
-  render() {
     return (
       <div className='main'>
         <div>
@@ -23,7 +17,7 @@ class App extends Component {
         <CompaniesContainer />
       </div>
     )
-  }
+  
 }
 
 
