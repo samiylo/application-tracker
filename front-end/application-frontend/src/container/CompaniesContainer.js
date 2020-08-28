@@ -13,6 +13,7 @@ class CompaniesContainer extends Component {
         this.props.fetchCompanies()
     }
 
+
     render() {
         return (
             <div>
@@ -33,5 +34,11 @@ const mapStateToProps = (state) => {
     }
 }
 
+// const mDSTP = (dispatch) => {
+//     return {
+//         dispatchFetchCompanies: () => dispatch(fetchCompanies()))
+//     }
+// }
 
-export default connect(mapStateToProps, {fetchCompanies})(CompaniesContainer);
+
+export default connect(mapStateToProps, { fetchCompanies })(CompaniesContainer);

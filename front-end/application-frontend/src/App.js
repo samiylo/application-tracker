@@ -7,8 +7,19 @@ import { useHistory } from "react-router-dom";
 import './App.css'
 
 
-function App() {
+class App extends Component {
 
+  state = {
+    counter: 0
+  }
+
+    handleClick() {
+    // this.setState(prevState => ({counter: prevState + 1}))
+    console.log(this)
+  }
+
+
+  render() {
     return (
       <div className='main'>
         <div>
@@ -17,6 +28,7 @@ function App() {
         <CompaniesContainer />
       </div>
     )
+  }
   
 }
 
