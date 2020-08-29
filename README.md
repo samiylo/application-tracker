@@ -1,6 +1,7 @@
 Welcome to my Application Tracker app.
 
  This project demonstrates my skill in Full Stack Development with JavaScript, HTML/CSS, React/Redux, Ruby on Rails and seperate Frontend/Backend API.
+ 
 This Application features...
  - Rails API backend
  - React/Redux frontend

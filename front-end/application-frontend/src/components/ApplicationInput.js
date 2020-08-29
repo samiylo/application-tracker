@@ -43,5 +43,4 @@ class ApplicationInput extends Component {
     }
 }
 
-
 export default connect(null, {addApplication}) (ApplicationInput);

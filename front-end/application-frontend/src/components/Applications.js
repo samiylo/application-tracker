@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { deleteApplication } from '../actions/deleteApplication'
 
-
-
 class Applications extends Component {
-
 
     handleSubmit = (event,application) => {
         event.preventDefault()
         this.props.deleteApplication(application.id, this.props.company.id)
-
     }
+
     render() {
         return (
             <div>
@@ -25,6 +22,5 @@ class Applications extends Component {
         )
     }
 }
-
 
 export default connect(null, {deleteApplication})(Applications);

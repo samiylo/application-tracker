@@ -1,5 +1,4 @@
 import React from 'react';
-// import Company from './Company'
 import { Route, Link } from 'react-router-dom'
 
 function Companies({companies}) {
@@ -13,7 +12,6 @@ const companiesArray = companies.map(company =>
         <div>
             <h2>Companies</h2>
             {companiesArray}
-            {/* {console.log(companies)} */}
         </div>
     )
 }
