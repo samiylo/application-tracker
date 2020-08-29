@@ -13,7 +13,6 @@ class CompaniesContainer extends Component {
         this.props.fetchCompanies()
     }
 
-
     render() {
         return (
             <div>
