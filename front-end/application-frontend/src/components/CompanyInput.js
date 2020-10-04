@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addCompany } from '../actions/addCompany'
-import '../App.css'
+import { addCompany } from '../actions/addCompany';
+import '../App.css';
 
 class CompanyInput extends Component {
 
@@ -20,7 +20,7 @@ class CompanyInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        
+
         this.props.addCompany(this.state)
         this.setState({
             name: '',

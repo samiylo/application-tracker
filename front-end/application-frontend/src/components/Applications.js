@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { deleteApplication } from '../actions/deleteApplication'
+import { connect } from 'react-redux';
+import { deleteApplication } from '../actions/deleteApplication';
 
 class Applications extends Component {
 

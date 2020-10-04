@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { addApplication } from '../actions/addApplication'
-import '../App.css'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addApplication } from '../actions/addApplication';
+import '../App.css';
 
 class ApplicationInput extends Component {
 

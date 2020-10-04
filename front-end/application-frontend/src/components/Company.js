@@ -1,7 +1,6 @@
-import React from 'react'
-// import { Redirect } from 'react-router-dom';
-import ApplicationsContainer from '../container/ApplicationsContainer'
-import  CompanyEdit from './CompanyEdit'
+import React from 'react';
+import ApplicationsContainer from '../container/ApplicationsContainer';
+import  CompanyEdit from './CompanyEdit';
 
 function Company(props) {
 
@@ -13,7 +12,6 @@ function Company(props) {
 
             <h3>Edit Company</h3>
             <CompanyEdit company={company} />
-
             <h3>Add Application</h3>
             <ApplicationsContainer company={company} />
         </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CompaniesContainer from './container/CompaniesContainer';
 import NavBar from './components/NavBar';
-import './App.css'
+import './App.css';
 
 function App() {
 
@@ -15,6 +15,5 @@ function App() {
     )
   
 }
-
 
 export default App;

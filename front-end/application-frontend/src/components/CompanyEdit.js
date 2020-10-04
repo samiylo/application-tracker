@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { editCompany } from '../actions/editCompany';
 import { Redirect } from 'react-router-dom';
-import '../App.css'
+import '../App.css';
 
 class CompanyEdit extends Component {
 

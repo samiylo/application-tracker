@@ -1,4 +1,3 @@
-// import { connect } from 'react-redux'
 
 export function deleteApplication(applicationId, companyID ) {
     return (dispatch) => {

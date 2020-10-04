@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import ApplicationInput from '../components/ApplicationInput'
-import Applications from '../components/Applications'
+import React, { Component } from 'react';
+import ApplicationInput from '../components/ApplicationInput';
+import Applications from '../components/Applications';
 
 export default function ApplicationsContainer(props) {
 
